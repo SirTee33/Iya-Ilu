@@ -1,0 +1,95 @@
+/*
+.people-ask-container {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+*/
+.people-ask-container {
+  min-height: 100vh;   /* Full height of screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  padding: 2rem;
+  max-width: 90%;
+  margin-left: 20px;
+  margin: 0 auto;
+}
+.people-ask-container h1{
+  margin-bottom: 20px;
+  
+}
+.spinner {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+/*
+.faq-item {
+  width: 100%; /* Make each FAQ take full width inside the container *
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+*/
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  gap: 2rem 4rem; /* space between columns */
+  margin-top: 2rem;
+    
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #9e9999;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 0;
+  line-height: 1.6;
+  
+}
+
+.faq-answer.open {
+  max-height: 300px; /* or enough to fit your text */
+  padding: 0.5rem 0;
+}
+.back-btn-container {
+  position: fixed; /* Make it stay in one spot */
+  top: 20px;        /* Distance from the top */
+  left: 20px;       /* Distance from the left */
+  z-index: 1000;    /* Stay above other content */
+}
+
+.back-btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.back-btn:hover {
+  background: white;
+  color: black;
+}

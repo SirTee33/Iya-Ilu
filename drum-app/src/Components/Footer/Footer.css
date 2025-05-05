@@ -1,0 +1,113 @@
+
+footer{
+  filter: blur(0.5px); 
+  color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px;
+}
+/*  
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background: #030615;
+  color: white;
+  margin-top: auto;
+}
+*/
+
+.back-ground-radiant{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to right, hsl(200, 85%, 4%), rgba(255, 255, 255, 0));
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;              /* Take up the full width */
+}
+.sir-tee{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.my-image{
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+}
+.footer-title{
+  font-size: 1.4rem;
+  white-space: normal;
+  line-height: 1.2;
+  
+}
+.footer-title2{
+  font-size: 1.2rem;
+  font-style: italic;
+  white-space: normal;
+  line-height: 1.4;
+  
+}
+.footer-content h1{
+  font-size: 1.5rem;
+  font-weight: 300;
+}  
+.footer-content button{
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 1rem;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.footer-content button:hover{
+  opacity: 0.7;
+}
+  
+.footer-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between text and icons */
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+  
+.footer-icons-container{
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  background: transparent;
+  
+}
+.social-icon{
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.social-icon img:hover{
+  transform: scale(1.1);
+}
+
