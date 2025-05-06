@@ -60,23 +60,4 @@ const AskMe = () => {
  
 };
 
-/*
-  return (
-    <div className="people-ask-container">
-      <h1>People Also Ask</h1>
-      {faqs.map((faq, index) => (
-        <div key={faq.id} className="faq-item">
-          <div className="faq-question" onClick={() => toggleFAQ(index)}>
-            {faq.question}
-            <FontAwesomeIcon icon={expandedIndex === index ? faChevronUp : faChevronDown} />
-          </div>
-          <div className={`faq-answer ${expandedIndex === index ? 'open' : ''}`}>
-            {expandedIndex === index && faq.answer}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
-*/
 export default AskMe;

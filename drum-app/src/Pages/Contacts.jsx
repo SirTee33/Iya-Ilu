@@ -113,10 +113,6 @@ const Contacts = () => {
         <div className="contact-info-item">
           <img src={xIcon} alt="" /> @TaiwoJohn
         </div>
-        
-        {/* <div className="contact-info-item">
-          <img src={Address} alt="" /> 1 Baba Festac Street, Ewupe, Singer B/Stop, Sango Ota, Ogun State.
-        </div> */}
       </div>
       <ToastContainer position="top-right" autoClose={3000} />
       </div>
