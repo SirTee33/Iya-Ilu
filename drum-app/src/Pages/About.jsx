@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Lightbox from "react-image-lightbox"
-import 'react-image-lightbox/style.css';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
@@ -134,21 +134,15 @@ const About = () => {
       </div>
 
       {/* Lightbox Popup */}
-      {isOpen && (
-        <Lightbox
-          mainSrc={allImages[photoIndex]}
-          nextSrc={allImages[(photoIndex + 1) % allImages.length]}
-          prevSrc={allImages[(photoIndex + allImages.length - 1) % allImages.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + allImages.length - 1) % allImages.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % allImages.length)
-          }
-        />
-      )}
-      
+      <Lightbox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        index={photoIndex}
+        slides={allImages.map((src) => ({ src }))}
+        on={{
+          view: ({ index }) => setPhotoIndex(index),
+        }}
+      />
     </div>
   );
 };
