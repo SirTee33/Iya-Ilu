@@ -35,7 +35,8 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/send-email', formData);
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/contact`, formData); /*('https://iya-ilu-backend.onrender.com') await  await axios.post('http://localhost:5000/send-email', formData);
+      */
       toast.success('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
