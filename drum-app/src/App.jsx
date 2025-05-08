@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Main from './Components/Main/Main';
 import Content from './Components/Content/Content';
@@ -17,8 +17,7 @@ function AppContent() {
   const [loading, setLoading] = useState(true);
   const [, setError] = useState(null);
 
-  //const _location = useLocation();
-
+  
   const handleMenuClick = () => {
     setShowMenu(true);
   };
