@@ -22,7 +22,7 @@ const Contacts = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState('');
+  const [status, _setStatus] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
