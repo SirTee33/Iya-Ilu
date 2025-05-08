@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // POST endpoint to send email
-app.post('/send-email', async (req, res) => {
+app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
