@@ -15,7 +15,7 @@ function AppContent() {
   const [showMenu, setShowMenu] = useState(false);
   const [drums, setDrums] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [_error, setError] = useState(null);
+  const [, setError] = useState(null);
 
   //const _location = useLocation();
 

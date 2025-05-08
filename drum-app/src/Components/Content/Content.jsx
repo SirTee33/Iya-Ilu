@@ -9,7 +9,7 @@ import SmallImage2 from "../Images/iyailu4a.png";
 import BigImage from "../Images/iyabata 01.jpg";
 
 const SideBar = (props) => {
-  const { _handleCheckHistory, data } = props;
+  const { data } = props;
   const navigate = useNavigate();
 
   return (
