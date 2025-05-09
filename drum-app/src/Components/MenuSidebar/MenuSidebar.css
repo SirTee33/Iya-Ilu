@@ -24,7 +24,7 @@
 
 /* Close button */
 .close-btn {
-  /* margin-top: 4px; */
+  margin-top: 4px;
   background: none;
   border: none;
   font-size: 1.1rem;
@@ -45,14 +45,14 @@
 }
 
 .menu-list li a {
-  color: white;
+  color: hsl(51, 100%, 48%);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   width: 100%;
   display: block;
   transition: color 0.3s;
 }
 
 .menu-list li a:hover {
-  color: goldenrod;
+  color: white;
 }

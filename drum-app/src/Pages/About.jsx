@@ -8,7 +8,7 @@ import '../Styles/About.css'; // external styling
 import iya1 from "../Components/Images/iyailu5.jpeg"
 import iya2 from "../Components/Images/iyailu6.jpeg"
 import iya3 from "../Components/Images/iyailu 0.jpg"
-import iya4 from "../Components/Images/iyailu4.jpeg"
+import iya4 from "../Components/Images/iyailu3.jpeg"
 import konga1 from "../Components/Images/konga1.jpeg"
 import konga2 from "../Components/Images/konga2.jpeg"
 import gangan from "../Components/Images/gangan1.jpeg"

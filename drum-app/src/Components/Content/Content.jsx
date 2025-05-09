@@ -4,9 +4,9 @@ import Time from "../Time/Time";
 import "./Content.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import SmallImage1 from "../Images/iyailu3a.png";
-import SmallImage2 from "../Images/iyailu4a.png";
-import BigImage from "../Images/iyailu 0.jpg";
+//import SmallImage1 from "../Images/iyailu3a.png";
+//import SmallImage2 from "../Images/iyailu4a.png";
+import BigImage from "../Images/iyailu4.jpeg";
 
 const SideBar = (props) => {
   const {data} = props;
@@ -25,10 +25,10 @@ const SideBar = (props) => {
         <div onClick={() => navigate('/')} className="bg-overlay"></div>
 
         {/* Small images */}
-        <div className="image-container">
+        {/* <div className="image-container">
           <img src={SmallImage1} alt="Talking Drum" className="small-image" />
           <img src={SmallImage2} alt="Talking Drum" className="small-image" />
-        </div>
+        </div> */}
 
         {/* Text contents */}
         <div className="sidebar-contents">
