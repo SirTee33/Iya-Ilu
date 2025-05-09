@@ -1,159 +1,3 @@
-/*
-.side-bar{
-  display: flex;
-  flex-direction: column;
-  z-index: 10;
-}
-.image-container{
-  display: flex;
-  border: none;
-  border-radius: 12px;
-  background: wheat;
-}
-.bg-overlay{
-  position: absolute;
-  inset: 0;
-  background: #030615;
-  opacity: 0.6;
-}
-.sidebar-contents{
-  padding-top: 15px;
-  z-index: 15;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  gap: 1rem;
-  /*overflow-y: auto;*
-  scrollbar-width: thin;
-  padding: 1rem;
-  /*scrollbar-color: #555 transparent;*
-  height: 100%;
-  width: 100%;
-  max-width: 900px;
-  margin-left: auto;
-  background: #030615;
-  text-align: justify;
-}
-.sidebar-contents div{
-  flex: 1;
-}
-.sidebar-contents button{
-  background: transparent;
-  color: white;
-  border: none;
-  outline: none;
-  margin-right: auto;
-  font-size: 18px;
-  cursor: pointer;
-  transition-duration: 200ms;
-  padding: 1rem 0;
-}
-.sidebar-contents button:hover{
-  opacity: 0.7;
-}
-@media (min-width: 640px){
-  .side-bar{
-    position: relative;
-    inset: unset;
-    min-width: 30%;
-    box-shadow: 0 0 40px 1px #030615;
-  }
-
-  .sidebar-contents{
-    margin: unset;
-  }
-}
-.sidebar-contents h1{
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-.sidebar-contents h4{
-  font-weight: 300;
-  font-size: 1.2rem;
-  color: rgba(245, 245, 245, 0.686);
-}
-.description-title{
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-.description-container{
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.sidebar-contents {
-  animation: slideInFromRight 0.5s ease-out forwards;
-  padding-top: 15px;
-  z-index: 15;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  gap: 1rem;
-  /*overflow-y: auto;*
-  height: 100%;
-  width: 100%;
-  max-width: 900px;
-  margin-left: auto;
-  background: #030615;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.6;
-  }
-}
-
-.bg-overlay {
-  animation: fadeIn 0.4s ease-in;
-}
-
-
-.sidebar-image {
-  max-width: 100%;
-  height: auto;
-  /* or you can use specific dimensions like below: *
-  max-height: 300px;  /* Adjust height as needed *
-}
-@keyframes slideInFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.sidebar-image {
-  max-width: 500px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 1rem auto;
-  display: block;
-  animation: slideInFade 0.8s ease forwards;
-}
-*/
 .side-bar {
   display: flex;
   height: 100vh;
@@ -169,9 +13,9 @@
 }
 
 .sidebar-full-image {
-  width: 550px;
+  width: 100%;
   height: 100%;
-  /*object-fit: cover;*/
+  /* object-fit: cover; */
   border-radius: 12px;
 }
 
@@ -197,14 +41,14 @@
 
 /* Small images container */
 .image-container {
+  width: 100%;
   display: flex;
-  gap: 1rem;
-  margin-right: 12px;
+  gap: 1.8rem;
   margin-bottom: 1rem;
-  z-index: 5;
+  /* z-index: 5; */
   border: none;
   border-radius: 12px;
-  background: wheat;
+  background: wheat; 
   align-items: center;
   justify-content: center;
   
@@ -212,8 +56,8 @@
 
 .small-image {
   flex: 1;
-  max-width: 46%;
-  height: 370px;
+  max-width: 40%;
+  height: 250x;
   /*object-fit: cover;*/
   animation: slideInSmall 0.6s ease forwards;
 }
@@ -235,13 +79,14 @@
   font-size: 2rem;
 }
 
-.sidebar-contents h4 {
+.description-container h4 {
   font-weight: 400;
   font-size: 1.2rem;
   color: rgba(245, 245, 245, 0.7);
 }
 
 .history-title {
+  margin-top: 10px;
   font-size: 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -250,23 +95,7 @@
   display: flex;
   gap: 3rem;
 }
-/* Button style 
-.sidebar-contents button {
-  background: transparent;
-  color: white;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-  margin-top: 2rem;
-  align-self: flex-start;
-}
 
-.sidebar-contents button:hover {
-  opacity: 0.7;
-}
-*/
-/* Animations */
 @keyframes slideInSmall {
   from {
     opacity: 0;

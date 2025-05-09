@@ -66,11 +66,11 @@
 .back-btn {
   background: transparent;
   border: 2px solid white;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 50%;
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   transition: background 0.3s, color 0.3s;
 }
 

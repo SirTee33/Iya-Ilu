@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import SmallImage1 from "../Images/iyailu3a.png";
 import SmallImage2 from "../Images/iyailu4a.png";
-import BigImage from "../Images/iyabata 01.jpg";
+import BigImage from "../Images/iyailu 0.jpg";
 
 const SideBar = (props) => {
   const {data} = props;

@@ -13,7 +13,7 @@ import whatsappIcon from "../Images/whatapp.png"
 const Footer = (props) => {
   const { handleCheckHistory, data } = props;
   const location = useLocation(); // <-- detect current page
-  if (location.pathname === '/about' || location.pathname === '/askme'){
+  if (location.pathname === '/about' || location.pathname === '/askme' || location.pathname === '/contacts'){
     return null; // ❌ don't render footer
   }
 
