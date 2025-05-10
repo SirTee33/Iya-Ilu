@@ -9,7 +9,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import BigImage from "../Images/iyailu4.jpeg";
 
 const SideBar = (props) => {
-  const {data} = props;
+  const { data } = props;
   const navigate = useNavigate();
 
   return (
@@ -52,7 +52,7 @@ const SideBar = (props) => {
             </button>
             <button onClick={() => navigate('/contacts')} className='back-btn'>
               <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+            </button>
           </div>
         </div>
       </div>

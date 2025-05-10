@@ -10,35 +10,41 @@ import About from './Pages/About';
 import AskMe from './Pages/AskMe';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
+import dataDrum from './Components/Data/dataDrum';
 
 function AppContent() {
   const [showMenu, setShowMenu] = useState(false);
   const [drums, setDrums] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [, setError] = useState(null);
+  //const [, setError] = useState(null);
 
-  
+
   const handleMenuClick = () => {
     setShowMenu(true);
   };
 
   useEffect(() => {
-    fetch("https://6809fb061f1a52874cde9c87.mockapi.io/Iya-Ilu")
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch");
-        return res.json();
-      })
-      .then((data) => {
-        setTimeout(() => {
-          setDrums(data);
-          setLoading(false);
-        }, 1000); 
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
+    setTimeout(() => {
+      setDrums(dataDrum); // 👈 use local data
+      setLoading(false);
+    }, 1000);
   }, []);
+  //   fetch("https://6809fb061f1a52874cde9c87.mockapi.io/Iya-Ilu")
+  //     .then((res) => {
+  //       if (!res.ok) throw new Error("Failed to fetch");
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       setTimeout(() => {
+  //         setDrums(data);
+  //         setLoading(false);
+  //       }, 1000);
+  //     })
+  //     .catch((err) => {
+  //       setError(err.message);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   if (loading) {
     return (
@@ -59,7 +65,7 @@ function AppContent() {
         <Route path="/" element={<Main handleMenuClick={handleMenuClick} />} />
         <Route path="/content" element={<Content data={drums[0]} />} />
         <Route path="/contacts" element={<Contacts />} />
-        <Route path="/about" element={<About />} /> 
+        <Route path="/about" element={<About />} />
         <Route path="/askme" element={<AskMe />} />
       </Routes>
       {/* 👇 Footer ALWAYS shows below */}
