@@ -41,13 +41,13 @@ const Footer = (props) => {
             <a href="https://www.www.tiktok.com/@johnteey" target="_blank" rel="noopener  noreferrer">
               <img src={tiktokIcon} alt="Tiktok" className="social-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+            <a href="https://https://www.facebook.com/John Taiwo T.Baba" target="_blank" rel="noopener  noreferrer">
               <img src={facebookIcon} alt="Facebook" className="social-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+            <a href="https://https://www.x.com/TaiwoJohn" target="_blank" rel="noopener  noreferrer">
               <img src={xIcon} alt="X" className="social-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener  noreferrer">
               <img src={instagramIcon} alt="Instagram" className="social-icon" />
             </a>
           </div>
