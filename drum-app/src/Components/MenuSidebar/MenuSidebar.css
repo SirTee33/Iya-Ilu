@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 140px;
+  width: 220px;
   height: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   padding: 20px;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5);
@@ -27,9 +27,10 @@
 .close-btn {
   background: none;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   align-self: flex-end;
+
 }
 
 /* Menu list */
@@ -48,7 +49,7 @@
 .menu-list li a {
   color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   width: 100%;
   display: block;
@@ -56,5 +57,35 @@
 }
 
 .menu-list li a:hover {
-  color: white;
+  color: goldenrod;
+}
+
+@media (max-width: 768px) {
+  .menu-sidebar {
+    width: 180px;
+    padding: 16px;
+  }
+
+  .menu-list li a {
+    font-size: 1.1rem;
+  }
+
+  .close-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-sidebar {
+    width: 160px;
+    padding: 12px;
+  }
+
+  .menu-list li a {
+    font-size: 1.1rem;
+  }
+
+  .close-btn {
+    font-size: 1rem;
+  }
 }

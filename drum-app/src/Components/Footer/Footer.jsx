@@ -44,7 +44,7 @@ const Footer = (props) => {
             <a href="https://www.facebook.com/John Taiwo T.Baba" target="_blank" rel="noopener  noreferrer">
               <img src={facebookIcon} alt="Facebook" className="social-icon" />
             </a>
-            <a href="https://www.x.com/TaiwoJohn" target="_blank" rel="noopener  noreferrer">
+            <a href="https://www.x.com/@TwinTeey" target="_blank" rel="noopener  noreferrer">
               <img src={xIcon} alt="X" className="social-icon" />
             </a>
             <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener  noreferrer">

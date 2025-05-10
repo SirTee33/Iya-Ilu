@@ -17,6 +17,7 @@
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .menu-icon:hover {
@@ -49,7 +50,7 @@
   }
 
   .menu-icon {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .main-img {
