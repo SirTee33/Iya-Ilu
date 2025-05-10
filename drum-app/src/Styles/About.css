@@ -2,7 +2,7 @@
   background-color: #030615;
   color: #ffffff;
   min-height: 100vh;
-  width: 100vw;  
+  width: 100vw;
 }
 
 /* Content Section */
@@ -12,7 +12,7 @@
   margin: 2rem auto;
   animation: fadeIn 1.5s ease-in;
   text-align: center;
-  
+
 }
 
 .about-content p {
@@ -28,6 +28,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -39,6 +40,7 @@
   .banner-overlay h1 {
     font-size: 2.2rem;
   }
+
   .banner-overlay h2 {
     font-size: 1.2rem;
   }
@@ -83,6 +85,7 @@
     height: 200px;
   }
 }
+
 .about-container {
   padding: 2rem;
   max-width: 800px;
@@ -95,12 +98,15 @@
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
+
 .about-intro {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #555;
   line-height: 1.6;
-  text-align: justify;}
+  text-align: justify;
+}
+
 .about-section {
   padding: 2rem;
   max-width: 800px;
@@ -122,7 +128,8 @@
   line-height: 1.6;
   text-align: justify;
 }
-.about-content h2{
+
+.about-content h2 {
   font-size: 1.8rem;
   color: #f0db4f;
   margin-bottom: 0.5rem;

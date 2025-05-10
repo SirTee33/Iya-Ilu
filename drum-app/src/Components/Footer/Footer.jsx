@@ -5,15 +5,15 @@ import { useLocation } from 'react-router-dom'; // <-- added
 import "./Footer.css";
 import MyImage from "../Images/sirtee.png";
 import facebookIcon from "../Images/facebook icon.png"
-import instagramIcon from "../Images/Instagram icon.jpeg"
+import tiktokIcon from "../Images/tiktok icon.png"
 import xIcon from "../Images/X icon.png"
-import whatsappIcon from "../Images/whatapp.png"
+import instagramIcon from "../Images/Instagram icon.jpeg"
 
 
 const Footer = (props) => {
   const { handleCheckHistory, data } = props;
   const location = useLocation(); // <-- detect current page
-  if (location.pathname === '/about' || location.pathname === '/askme' || location.pathname === '/contacts'  || location.pathname === '/content'){
+  if (location.pathname === '/about' || location.pathname === '/askme' || location.pathname === '/contacts' || location.pathname === '/content') {
     return null; // ❌ don't render footer
   }
 
@@ -24,7 +24,7 @@ const Footer = (props) => {
         <div className="sir-tee">
           <img src={MyImage} alt="Sir Tee Logo" className="my-image" />
           <h1>SIR-TEE PROJECT</h1>
-        </div>  
+        </div>
 
         {/* Only show these titles if data exists */}
         {data?.title && <h2 className="footer-title">{data.title}</h2>}
@@ -37,14 +37,21 @@ const Footer = (props) => {
           </button>
         )}
         <div className="footer-icon-row">
-        <div className="footer-icons-container">
-          {/* <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener  noreferrer"> </a> */}
-          <img src={instagramIcon} alt="Instagram" className="social-icon" />
-          <img src={facebookIcon} alt="Facebook" className="social-icon" />
-          <img src={xIcon} alt="X" className="social-icon" />
-          <img src={whatsappIcon} alt="WhatsApp" className="social-icon" />
+          <div className="footer-icons-container">
+            <a href="https://www.www.tiktok.com/@johnteey" target="_blank" rel="noopener  noreferrer">
+              <img src={tiktokIcon} alt="Tiktok" className="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+              <img src={facebookIcon} alt="Facebook" className="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+              <img src={xIcon} alt="X" className="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/taiwo-ojo-9488a7255" target="_blank" rel="noopener  noreferrer">
+              <img src={instagramIcon} alt="Instagram" className="social-icon" />
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </footer>
   );

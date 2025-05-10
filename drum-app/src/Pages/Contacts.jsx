@@ -7,9 +7,6 @@ import axios from 'axios';
 import ContactImage from "../Components/Images/iyailu.jpeg";
 import Phone from "../Components/Images/phone icon1.png";
 import Email from "../Components/Images/email icon1.png";
-// import Address from "../Components/Images/address icon1.png";
-import facebookIcon from "../Components/Images/facebook icon.png"
-import xIcon from "../Components/Images/X icon.png"
 import whatsappIcon from "../Components/Images/whatapp.png"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -61,39 +58,39 @@ const Contacts = () => {
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
-            <input 
-              type="text" 
-              id="name" 
+            <input
+              type="text"
+              id="name"
               name="name"
-              placeholder="Enter your name" 
+              placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
-              required 
+              required
             />
           </div>
 
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input 
-              type="email" 
-              id="email" 
+            <input
+              type="email"
+              id="email"
               name="email"
-              placeholder="Enter your email" 
+              placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              required 
+              required
             />
           </div>
 
           <div className="form-group">
             <label htmlFor="message">Message:</label>
-            <textarea 
-              id="message" 
+            <textarea
+              id="message"
               name="message"
-              placeholder="Enter your message" 
+              placeholder="Enter your message"
               value={formData.message}
               onChange={handleChange}
-              required 
+              required
             ></textarea>
           </div>
 
@@ -101,21 +98,15 @@ const Contacts = () => {
         </form>
         <p>{status}</p>
         <div className="contact-info">
-        <div className="contact-info-item">
-          <img src={Phone} alt="" /> 
-          <img src={whatsappIcon} alt="" /> +2348136190222
+          <div className="contact-info-item">
+            <img src={Phone} alt="" />
+            <img src={whatsappIcon} alt="" /> +2348136190222
+          </div>
+          <div className="contact-info-item">
+            <img src={Email} alt="" /> ojotaye33@gmail.com
+          </div>
         </div>
-        <div className="contact-info-item">
-          <img src={Email} alt="" /> ojotaye33@gmail.com
-        </div>
-        <div className="contact-info-item">
-          <img src={facebookIcon} alt="" /> @John Taiwo T.Baba
-        </div>
-        <div className="contact-info-item">
-          <img src={xIcon} alt="" /> @TaiwoJohn
-        </div>
-      </div>
-      <ToastContainer position="top-right" autoClose={3000} />
+        <ToastContainer position="top-right" autoClose={3000} />
       </div>
     </div>
   );

@@ -1,30 +1,37 @@
 .people-ask-container {
-  min-height: 100vh;   /* Full height of screen */
+  min-height: 100%;
+  /* Full height of screen */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center;     /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
   padding: 2rem;
   max-width: 90%;
-  margin-left: 20px;
   margin: 0 auto;
 }
-.people-ask-container h1{
+
+.people-ask-container h1 {
   margin-bottom: 20px;
-  
+
 }
+
 .spinner {
   text-align: center;
   padding: 3rem;
   font-size: 1.5rem;
   color: #555;
 }
+
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2 columns */
-  gap: 2rem 4rem; /* space between columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* 2 columns */
+  gap: 2rem 4rem;
+  /* space between columns */
   margin-top: 2rem;
-    
+
 }
 
 .faq-item {
@@ -49,18 +56,25 @@
   transition: max-height 0.5s ease, padding 0.3s ease;
   padding: 0 0;
   line-height: 1.6;
-  
+  text-align: justify;
+
 }
 
 .faq-answer.open {
-  max-height: 300px; /* or enough to fit your text */
+  max-height: 500px;
+  /* or enough to fit your text */
   padding: 0.5rem 0;
 }
+
 .back-btn-container {
-  position: fixed; /* Make it stay in one spot */
-  top: 20px;        /* Distance from the top */
-  left: 20px;       /* Distance from the left */
-  z-index: 1000;    /* Stay above other content */
+  position: fixed;
+  /* Make it stay in one spot */
+  top: 20px;
+  /* Distance from the top */
+  left: 20px;
+  /* Distance from the left */
+  z-index: 1000;
+  /* Stay above other content */
 }
 
 .back-btn {
@@ -70,11 +84,17 @@
   border-radius: 50%;
   color: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   transition: background 0.3s, color 0.3s;
 }
 
 .back-btn:hover {
   background: white;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
 }
