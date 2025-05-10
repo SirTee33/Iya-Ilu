@@ -4,57 +4,55 @@
   min-height: 100vh;
   overflow: visible;
 }
-.menu-icon-container{
+
+.menu-icon-container {
   position: absolute;
   top: 1rem;
+  left: 1rem;
   padding: 10px;
-  margin-left: 2px;
 }
-.menu-icon{
+
+.menu-icon {
   font-size: 1.3rem;
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.menu-icon:hover{
+
+.menu-icon:hover {
   color: goldenrod;
 }
-.iyailu-main{
-  width: 100%;
-  height: 200vh;
-  flex: 1;
-  object-fit: cover;
-  position: relative;
-}
-.iyailu-small{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-}
-.iyailu-small img{
-  width: 500px;
-  height: 500px;
-}
-.main-image {
+
+.main-img {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   display: block;
-  transition: all 0.5s ease-in-out;
-}
-.sidebar-img{
-  width: 90%; /* Ensure the image doesn't stretch beyond the container */
-  height: auto; /* Control the height of the sidebar image */
-  object-fit: cover;
-  border-radius: 12px;
-  margin: 20px auto;
-  display: block; /* Ensures the image maintains its aspect ratio while filling the container */
-  
-}
-.main-img{
-  width: 98vw;
-  height: 100%;
-  object-fit: cover;
 }
 
+/* ✅ Responsive Styling */
+@media (max-width: 768px) {
+  .menu-icon {
+    font-size: 1.1rem;
+  }
+
+  .main-img {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-icon-container {
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 5px;
+  }
+
+  .menu-icon {
+    font-size: 1rem;
+  }
+
+  .main-img {
+    height: 80vh;
+  }
+}
