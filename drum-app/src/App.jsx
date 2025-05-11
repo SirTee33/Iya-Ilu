@@ -18,7 +18,6 @@ function AppContent() {
   const [loading, setLoading] = useState(true);
   //const [, setError] = useState(null);
 
-
   const handleMenuClick = () => {
     setShowMenu(true);
   };
@@ -27,7 +26,7 @@ function AppContent() {
     setTimeout(() => {
       setDrums(dataDrum); // 👈 use local data
       setLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
   //   fetch("https://6809fb061f1a52874cde9c87.mockapi.io/Iya-Ilu")
   //     .then((res) => {
@@ -50,7 +49,7 @@ function AppContent() {
     return (
       <div className="loading-container">
         <FontAwesomeIcon className="loading-icon" icon={faGear} spin />
-        <p className="loading-text">Loading in progress, please wait.</p>
+        <p className="loading-text">Loading in progress....</p>
       </div>
     );
   }

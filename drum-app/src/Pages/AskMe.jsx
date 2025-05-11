@@ -3,7 +3,7 @@ import "../Styles/AskMe.css"; // You can create this CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp, faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-
+import dataASK from '../Components/Data/dataAsk';
 
 
 const AskMe = () => {
@@ -14,17 +14,22 @@ const AskMe = () => {
     
 
   useEffect(() => {
-    fetch('https://6809fb061f1a52874cde9c87.mockapi.io/AskMe') // change to your actual MockAPI endpoint
-      .then((res) => res.json())
-      .then((data) => {
-        setAskMe(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching FAQs:", error);
-        setLoading(false);
-      });
+    setTimeout(() => {
+      setAskMe(dataASK); // 👈 use local data
+      setLoading(false);
+    });
   }, []);
+  //   fetch('https://6809fb061f1a52874cde9c87.mockapi.io/AskMe') // change to your actual MockAPI endpoint
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setAskMe(data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching FAQs:", error);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   const toggleFAQ = (index) => {
     setExpandedIndex(prevIndex => (prevIndex === index ? null : index));
