@@ -59,14 +59,14 @@ const About = () => {
         <div className="about-section">
         <h2>Our Vision</h2>
         <p>
-          Our vision is to be a leading cultural platform that preserve and promotes the art of talking drum, "Iya-Ilu", and other traditional African musical instruments. We aim to bridge the gap between cultures, bringing people together through the power of rhythm, while celebrating the rich heritage and history of African music. 
+          Our vision is to be a leading cultural platform that preserve and promotes the art of talking drum, "Iya-Ilù", and other traditional African musical instruments. We aim to bridge the gap between cultures, bringing people together through the power of rhythm, while celebrating the rich heritage and history of African music. 
         </p>
       </div>
 
       <div className="about-section">
         <h2>Our Mission</h2>
         <p>
-          Our mission is to educate, inspire, and connect people with the ancient rhythms and vibrant sounds of the talking drum. We strive to create a platform where individuals from all walks of life can explore, learn, and appreciate the cultural significance of the Iya-Ilu and other traditional drums. Through immersive experience, hands-on workshops, and cultural exchanges, we aim to foster a deeper understanding of Africa music, its traditions, and its importance in contemporary society.
+          Our mission is to educate, inspire, and connect people with the ancient rhythms and vibrant sounds of the talking drum. We strive to create a platform where individuals from all walks of life can explore, learn, and appreciate the cultural significance of the Iya-Ilù and other traditional drums. Through immersive experience, hands-on workshops, and cultural exchanges, we aim to foster a deeper understanding of Africa music, its traditions, and its importance in contemporary society.
         </p>
       </div>
 
