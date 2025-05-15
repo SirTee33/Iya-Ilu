@@ -16,10 +16,10 @@ const MenuSidebar = ({ handleCloseMenu, isOpen  }) => {
           <Link to="/content" onClick={handleCloseMenu}>Content</Link>
         </li>
         <li>
-          <Link to="/contacts" onClick={handleCloseMenu}>Contacts</Link>
+          <Link to="/askme" onClick={handleCloseMenu}>AskMe</Link>
         </li>
         <li>
-          <Link to="/askme" onClick={handleCloseMenu}>AskMe</Link>
+          <Link to="/contacts" onClick={handleCloseMenu}>Contact</Link>
         </li>
       </ul>
     </div>
