@@ -23,7 +23,7 @@ const Footer = (props) => {
       <div className="footer-content">
         <div className="sir-tee">
           <img src={MyImage} alt="Sir Tee Logo" className="my-image" />
-          <h1>SIR-TEE PROJECT</h1>
+          <h1 className='animated-title'>SIR-TEE PROJECT</h1>
         </div>
 
         {/* Only show these titles if data exists */}

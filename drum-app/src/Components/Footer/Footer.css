@@ -48,10 +48,23 @@ footer{
   line-height: 1.4;
   
 }
-.footer-content h1{
+.animated-title{
   font-size: 1.2rem;
   font-weight: 300;
-}  
+  animation: floatText 4s ease-in-out infinite, fadeIn 2s ease-in;
+}
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateX(+15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 .footer-content button{
   background: transparent;
   color: white;
