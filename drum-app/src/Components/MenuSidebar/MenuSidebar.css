@@ -15,6 +15,7 @@
   transform: translateX(-100%);
   /* Initially hidden */
   transition: transform 0.3s ease-in-out;
+  padding: 20px;
 }
 
 /* When sidebar is open */
@@ -36,8 +37,8 @@
 .menu-list {
   list-style: none;
   padding: 0;
-  margin-top: 40px;
-  width: 100%;
+  margin-top: 60px;
+  /* width: 100%; */
 
 }
 
@@ -45,13 +46,15 @@
   margin-bottom: 20px;
 }
 
-.menu-list li a {
+.menu-list a {
   color: white;
   text-decoration: none;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: 600;
-  width: 100%;
-  display: block;
+  gap: 20px;
+  /* width: 100%; */
+  /* display: block; */
   transition: color 0.3s;
 }
 
@@ -87,4 +90,26 @@
   .close-btn {
     font-size: 1rem;
   }
+}
+
+.menu-icon {
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+/* 🎨 Unique colors for each icon */
+.about-icon {
+  color: #4ea8de; /* Blue */
+}
+
+.content-icon {
+  color: #f9a825; /* Yellow */
+}
+
+.ask-icon {
+  color: #7b1fa2; /* Purple */
+}
+
+.contact-icon {
+  color: #43a047; /* Green */
 }
