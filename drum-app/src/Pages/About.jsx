@@ -74,7 +74,7 @@ const About = () => {
       <div className="about-content">
         <h2>About Iya-Ilù "The Talking Drum"</h2>
         <p className="about-intro">
-          Iya-Ilù is more than just a drum — it’s the heartbeat of tradition. 
+          Iya-Ilù is more than just a drum, it’s the heartbeat of tradition. 
           Our mission is to celebrate, teach, and preserve the beauty of African talking drums.
         </p>
         <p>
