@@ -37,13 +37,13 @@
 .menu-list {
   list-style: none;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 68px;
   /* width: 100%; */
 
 }
 
 .menu-list li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .menu-list a {
@@ -60,6 +60,8 @@
 
 .menu-list li a:hover {
   color: goldenrod;
+  text-decoration-thickness: 2px;
+  text-decoration-line: overline;
 }
 
 @media (max-width: 768px) {

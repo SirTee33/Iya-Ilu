@@ -84,6 +84,9 @@
   .gallery-grid img {
     height: 200px;
   }
+  .about-content h2 {
+    font-size: 1.0rem;
+  }
 }
 
 .about-container {
