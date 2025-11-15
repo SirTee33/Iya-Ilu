@@ -8,8 +8,8 @@
   padding: 2rem;
   max-width: 95%;
   margin: 0 auto;
-  /* text-align: center; */
-  /* justify-content: center; */
+  text-align: center;
+  justify-content: center; 
 }
 
 .about-container h1 {
@@ -20,7 +20,7 @@
   padding: 2rem;
   max-width: 95%;
   margin: 0 auto;
-  /* text-align: center; */
+  text-align: center;
   animation: fadeIn 1.5s ease-in;
   margin-bottom: 15px;
 }
@@ -43,7 +43,7 @@
   width: 95%;
   margin: 2rem auto;
   animation: fadeIn 1.5s ease-in;
-  /* text-align: center; */
+  text-align: center;
 
 }
 
