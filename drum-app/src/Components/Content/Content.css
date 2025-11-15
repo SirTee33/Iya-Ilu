@@ -69,7 +69,8 @@
 .sidebar-contents h1 {
   font-weight: 600;
   font-size: 2rem;
-  animation: floatText 5s ease-in-out infinite, fadeIn 2s ease-in;
+  color: goldenrod;
+  animation: floatText 8s ease-in-out infinite, fadeIn 2s ease-in;
 }
 
 .description-container h4 {

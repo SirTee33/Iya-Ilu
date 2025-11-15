@@ -21,6 +21,10 @@ import agbamole2 from "../Components/Images/agbamole 2.jpg"
 import agbamole3 from "../Components/Images/agbamole 3.jpg"
 import iyabata from "../Components/Images/iyabata 0.jpg"
 import ganganwhite from "../Components/Images/gangan white.jpg"
+import shekere from "../Components/Images/shekere N.jpg"
+import bata from "../Components/Images/bata N.jpg"
+import konga from "../Components/Images/konga N.jpg"
+import bell from "../Components/Images/bell agogo N.jpg"
 
 
 
@@ -42,7 +46,12 @@ const iyaIluImages = [
     agbamole2,
     agbamole3,
     iyabata,
-    ganganwhite
+    ganganwhite,
+    shekere,
+    bata,
+    konga,
+    bell
+
 
   ];
 
