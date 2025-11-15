@@ -2,14 +2,14 @@
   background-color: #030615;
   color: #ffffff;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 .about-container {
   padding: 2rem;
-  max-width: 95%;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: center;
-  justify-content: center; 
+  /* text-align: center;
+  justify-content: center;  */
 }
 
 .about-container h1 {
@@ -18,9 +18,11 @@
 }
 .about-section {
   padding: 2rem;
-  max-width: 95%;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  border: 2px solid #f0db4f;
+  border-radius: 10px;
+  /* text-align: center; */
   animation: fadeIn 1.5s ease-in;
   margin-bottom: 15px;
 }
@@ -40,10 +42,12 @@
 /* Content Section */
 .about-content {
   padding: 2rem;
-  width: 95%;
+  max-width: 800px;
   margin: 2rem auto;
   animation: fadeIn 1.5s ease-in;
-  text-align: center;
+  border: 2px solid #f0db4f;
+  border-radius: 10px;
+  /* text-align: center; */
 
 }
 
