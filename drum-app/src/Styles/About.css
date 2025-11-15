@@ -121,12 +121,12 @@
     height: 200px;
   }
   .about-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 @media (max-width: 480px) {
   .about-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
   .gallery-section h2 {
     font-size: 1.2rem;
