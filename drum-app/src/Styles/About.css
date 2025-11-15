@@ -14,7 +14,7 @@
 
 .about-section {
   padding: 2rem;
-  width: 100%;
+  width: auto;
   /* max-width: 800px; */
   margin: 0 auto;
   /* text-align: center; */
