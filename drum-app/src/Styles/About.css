@@ -2,11 +2,11 @@
   background-color: #030615;
   color: #ffffff;
   /* min-height: 100vh; */
-  /* width: 100vw; */
+  width: 100%; 
 }
 .about-container {
   padding: 10px;
-  /* max-width: 800px; */
+  max-width: 95%;
   margin: 0 auto;
   /* text-align: center;
   justify-content: center; */
@@ -126,17 +126,17 @@
     height: 200px;
   }
   .about-content h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 480px) {
   .about-content h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
   .gallery-section h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
   .about-section h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
   }
 }
